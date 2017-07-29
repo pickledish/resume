@@ -1,0 +1,123 @@
+%!TEX program = xelatex
+
+% Document Formatting
+\documentclass{report}
+\usepackage[left=0.75in,right=0.75in,bottom=0.68in,top=0.68in]{geometry}
+\thispagestyle{empty}
+\setlength\parindent{0pt}
+\usepackage{setspace}
+\usepackage{enumitem}
+\let\Hermaphrodite\relax
+\usepackage{multicol,stix,marvosym}
+
+\def\labelitemi{$\diamond$}
+\setlength{\multicolsep}{6.0pt plus 2.0pt minus 2pt}
+
+% Font Formatting
+\usepackage{fontspec}
+\setmainfont{Helvetica Neue Light}
+\newfontfamily\thin{Helvetica Neue Thin}
+\usepackage{moresize}
+\usepackage[usenames,dvipsnames]{xcolor}
+\usepackage[fontsize=10pt]{scrextend}
+
+% Actual Document
+\begin{document}
+\setstretch{1.45}
+
+\vspace*{-14pt}
+{\thin {\HUGE Brandon Willett} } 
+\hfill 
+\makebox{\renewcommand{\arraystretch}{0.75} 
+\begin{tabular}{rr} 
+	$\house$~ 500 Wilson Blvd, Rochester NY 14627 \\ {\large\Letter}~ brandon @ willett.io \\ {\large\Telefon}~ (203) 258 2721 
+\end{tabular}} \vspace*{-5pt}
+
+\setstretch{1.12}
+\vspace{10pt} EDUCATION
+\vspace{4pt} \textcolor{gray}{\hrule}
+\vspace{14pt} \textbf{University of Rochester}, \textit{Rochester NY} \hfill August 2014 - May 2018
+\begin{itemize} [noitemsep,topsep=4pt]
+	\item Candidate for B.S. in Computer Science, specializing in algorithms \& complexity
+	\item Candidate for B.A. in Mathematics, specializing in abstract algebra
+	\item Taken several graduate-level courses, such as: \begin{multicols}{2} \begin{itemize}[noitemsep, topsep=0pt]
+		\item[\textbullet] ~CSC 284 ~--~ Advanced Algorithms
+		\item[\textbullet] ~CSC 286 ~--~ Computational Complexity
+		\item[\textbullet] ~MTH 436 ~--~ Group and Ring Theory
+		\item[\textbullet] ~MTH 437 ~--~ Galois Theory
+		\end{itemize} \end{multicols}
+	\item Current Major GPA is 3.82 (Computer Science) and is 3.80 (Mathematics), achieved Dean's List each semester
+\end{itemize}
+
+\vspace{8pt} SOFTWARE DEVELOPMENT EXPERIENCE
+\vspace{4pt} \textcolor{gray}{\hrule}
+
+\vspace{14pt} \textbf{Computational Statistics Research Assistant} \hfill September 2016 - Present \\
+\textit{University of Rochester Chemical Engineering Department \hfill Rochester, NY}
+\begin{itemize} [noitemsep,topsep=4pt]
+	\item Created and improved an algorithm which implements a Markov chain based statistic analysis on a set of random variables given by time series data, along with a friendly web interface for visualizing its results
+	\item Implemented the backend using Python with NumPy and Pandas, and the frontend using JavaScript with jQuery
+\end{itemize}
+
+\vspace{8pt} \textbf{Software Development Intern} \hfill June 2017 - August 2017 \\
+\textit{Edu Chat Inc. \hfill New York, NY}
+\begin{itemize} [noitemsep,topsep=4pt] % from scratch!
+	\item Developed an adaptive chat bot, backed up by a machine learning model, to classify / answer student questions
+	\item Worked closely with a team of three other engineers, using JIRA and Git extensively in collaboration, to refine, test and integrate the new NLP question-matching model with the greater Edu Chat platform in time for launch
+\end{itemize}
+
+\vspace{8pt} LEADERSHIP EXPERIENCE
+\vspace{4pt} \textcolor{gray}{\hrule}
+
+\vspace{14pt} \textbf{Teaching Assistant} \hfill January 2016 - Present \\
+\textit{University of Rochester Department of Computer Science \hfill Rochester, NY}
+\begin{itemize} [noitemsep,topsep=4pt]
+	\item Led weekly workshops, graded tests / homework, and helped students through core and upper-level classes
+	\item Relevant courses include CSC 254 Programming Language Design and CSC 282 Analysis of Efficient Algorithms 
+\end{itemize}
+
+\vspace{8pt} \textbf{Student Supervisor} \hfill September 2014 - Present \\
+\textit{University of Rochester Event and Classroom Management \hfill Rochester, NY}
+\begin{itemize} [noitemsep,topsep=4pt]
+	\item Trained, managed, and communicated with the large (80+) student staff since August 2016, in addition to:
+	\item Organized small teams which ran AV technology for events across campus, including concerts and ceremonies, and also provided systems and software support for students \& faculty at the University 
+\end{itemize}
+
+% \vspace{8pt} \textbf{Volunteer Study Hall Leader}
+% \hfill \textit{October 2015 - May 2016}
+% \begin{itemize} [noitemsep,topsep=4pt]
+%	\item University of Rochester - Department of Computer Science}
+%	\item Founded and maintained two groups for first- and second-year Computer Science students that met biweekly to collaborate on challenging projects and coursework}
+% \end{itemize}
+
+% \vspace{8pt} \textbf{Senior Technician} ~-~ \textit{Monroe Public Schools Department of IT}
+% \hfill \textit{Summers of 2011 - 2015}
+% \begin{itemize} [noitemsep,topsep=4pt]
+% 	\item Trusted to set up new computers/printers and service existing ones, as well as troubleshoot networking issues and provide in-person support to % teachers and staff
+% 	\item Position in 2015 and 2016 also required training and giving guidance to newly-hired employees
+% \end{itemize}
+
+\vspace{8pt} SKILLS AND QUALIFICATIONS
+\vspace{4pt} \textcolor{gray}{\hrule}
+
+\vspace{16pt} \textbf{Personal Projects}
+\begin{itemize} [noitemsep,topsep=4pt]
+	\item Learned Scala independently, and used it to create an annealing model for determining optimal traffic light timing
+	\item Founded a weekly study group which connected first-year CS students to work together on course projects
+	\item Implemented a random-forest machine learning classifier in "Colors", which then suggests amiable color pairings
+\end{itemize}
+
+\vspace{8pt} \textbf{Programming}
+\begin{itemize} [noitemsep,topsep=4pt]
+	\item Languages: Proficient with C, Java, Python, and JavaScript; and experience with C++, Scala, Swift, and SQL
+	\item Non-Languages: Experience with Agile development, Git source control, BASH terminal, and unit testing
+\end{itemize}
+
+% \vspace{8pt} \textbf{Communication} - Excellent interpersonal skills including the following:
+% \begin{itemize} [noitemsep,topsep=4pt]
+%	\item Experienced with assisting people (customer service / help desk situations) in a friendly way
+%	\item Able to speak conversational French at a proficient level
+%	\item Experienced with training and working with large groups of coworkers in high-stress environments
+% \end{itemize}
+
+\end{document}

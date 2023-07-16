@@ -1,6 +1,6 @@
 # My Resume
 
-Version control for updates to my resume, written in LaTeX and generated via instructions below
+Version control for updates to my resume, written in LaTeX and generated via instructions below.
 
 ## Setup
 

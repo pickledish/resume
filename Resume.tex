@@ -22,7 +22,7 @@
 \setmainfont{Source Sans Pro}
 \newfontfamily\thin{Inconsolata}
 \usepackage{moresize}
-\usepackage[fontsize=0.37cm]{scrextend}
+\usepackage[fontsize=10.5pt]{scrextend}
 
 \setlist[itemize,1]{leftmargin=\dimexpr 18pt}
 
@@ -31,11 +31,11 @@
 
 \begin{document}
 	\noindent\setstretch{1.28}\noindent
-	\begin{bgbox}[height=\paperheight, colback=gray!15, width=0.38\textwidth, left=0.12in, right=0.11in]
+	\begin{bgbox}[height=\paperheight, colback=gray!15, width=0.38\textwidth, left=0.12in, right=0.11in]\raggedright
 		\vspace*{-4pt}
 		\fillbox{\thin Brandon\\[-6pt] \thin Willett}\vspace*{12pt}
 		{\Huge{Education}}\\[-6pt]
-		\noindent\rule{\textwidth}{1pt}\\ \\
+		\noindent\rule{\textwidth}{1pt}\\[12pt]
 		\textbf{UNIVERSITY OF ROCHESTER}
 		\begin{itemize} [noitemsep,topsep=4pt]
 			\item Graduated in 2018
@@ -44,28 +44,28 @@
 		\end{itemize}
 		\vspace*{24pt}
 		{\Huge{Skills}}\\[-6pt]
-		\noindent\rule{\textwidth}{1pt}\\ \\
+		\noindent\rule{\textwidth}{1pt}\\[12pt]
 		\textbf{BACKEND}
 		\begin{itemize} [noitemsep,topsep=4pt]
 			\item Go, Python, Java, Scala
-			\item Message queues (Kafka, RabbitMQ)
-			\item DAG pipelines (Airflow, Luigi)
-			\item Transactional databases (Postgres, Cass)
-			\item Analytical / columnar databases
-			\item Caches (in-memory, Redis)
-			\item Database sharding
+			\item Message Queues (Kafka, RabbitMQ)
+			\item DAG Pipelines (Airflow, Luigi)
+			\item Transactional Databases (Postgres, Cass)
+			\item Analytical / Columnar Databases
+			\item Database Sharding
+			\item Caches (Memcached, Redis)
 		\end{itemize}
 		\vspace*{12pt}
 		\textbf{PLATFORM}
 		\begin{itemize} [noitemsep,topsep=4pt]
-			\item Version Control (git)
-			\item CI/CD (GitHub Actions, Gitlab)
+			\item Version Control (Git)
+			\item CI/CD (Github Actions, Gitlab)
 			\item Telemetry (Prometheus, Datadog)
-			\item Containerization (Docker, containerd)
-			\item Build tools (Rake, Bazel)
-			\item Infra as code (Cloudformation, Terraform)
-			\item Reverse proxies (nginx, HAProxy)
-			\item Load balancers (L4, L7)
+			\item Containerization (Docker, Containerd)
+			\item Build Tools (Rake, Bazel)
+			\item Infra as Code (Cloudfornation, Terraform)
+			\item Reverse Proxies (NGINX, HAProxy)
+			\item Load Balancers (L4, L7)
 			\item Service Discovery (DNS, Consul, Envoy)
 		\end{itemize}
 		\vspace*{12pt}
@@ -77,7 +77,7 @@
 			\item Kubernetes (ask me about any resource)
 		\end{itemize}
 	\end{bgbox}%
-	\begin{bgbox}[height=\paperheight, colback=white, width=0.62\textwidth]
+	\begin{bgbox}[height=\paperheight, colback=white, width=0.62\textwidth]\raggedright
 		\vspace*{9pt}
 		\begin{bgbox}[height=1.60in, colback=gray!15, width=\textwidth, top=0.05in]
 			\makebox[\textwidth][s]{A young New-York-based developer with experience in platform dev. }\\
@@ -88,14 +88,14 @@
 			\null \hfill $\house$~ \textit{391 8th Street, New York NY 11215}
 		\end{bgbox}\vspace*{25.5pt}
 		{\Huge{Experience}}\\[-6pt]
-		\noindent\rule{\textwidth}{1pt}\\ \\
+		\noindent\rule{\textwidth}{1pt}\\[12pt]
 		\textbf{ACTIONIQ} \hfill \textit{New York, NY}\\
 		Distributed Systems Engineer \hfill Jun 18 -- Present
 		\begin{itemize} [noitemsep,topsep=4pt]
-			\item Designed, advocated for, and implemented the AIQ strategy for autoscaling query execution on EC2, reducing our AWS bill by more than 50\%
-			\item Drove scalability improvement to the open-source job scheduling platform Luigi, and contributed some of that back upstream
-			\item Maintained the Prometheus cluster (later, DataDog) and led internal talks and workshops on best practices around metrics \& observability
-			\item Enabled dynamic configuration and artifact discovery (Ansible, Consul)
+			\item Designed, advocated for, and implemented our strategy for autoscaling query execution on EC2, reducing our AWS bill by more than 50\%
+			\item Drove scalability improvements for the OSS job scheduling platform Luigi, and contributed some of that back upstream
+			\item Maintained the Prometheus cluster (later, Datadog) and led internal talks and workshops on best practices around metrics \& observability
+			\item Enabled dynamic configuration and artifact discovery
 			\item Brought some of the first Terraform modules to AIQ, used them to build \linebreak the first version of our streaming ingest platform using IaC
 		\end{itemize}
 		\vspace*{12pt}

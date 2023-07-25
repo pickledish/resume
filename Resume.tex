@@ -48,11 +48,11 @@
 		\textbf{BACKEND}
 		\begin{itemize} [noitemsep,topsep=4pt]
 			\item Go, Python, Java, Scala, Javascript
-			\item Streaming Pipelines (Kafka, RabbitMQ)
-			\item DAG Pipelines (Airflow, Luigi)
+			\item Web Frameworks (Django, Flask, Rails)
+			\item Streaming Pipelines (Kafka)
+			\item Workflow Platforms (Airflow, Luigi)
 			\item Transactional Databases (Postgres, Cass)
-			\item Analytical / Columnar Databases
-			\item Database Sharding
+			\item Analytical Databases
 			\item Caches (Memcached, Redis)
 		\end{itemize}
 		\vspace*{12pt}
@@ -83,31 +83,31 @@
 			\makebox[\textwidth][s]{A young New-York-based developer with experience in platform dev. }\\
 			Always believing that any problem can be overcome with \\
 			kind communication, a good sense of humor, \\
-			and just persisting everything to S3. \hfill {\large\Telefon}~ \textit{203 258 2721} \\
+			and just persisting everything to S3. \\
+			\null \hfill {\large\Telefon}~ \textit{+1 203 258 2721} \\
 			\null \hfill {\large\Letter}~ \textit{brandon @ willett.io } \\
-			\null \hfill $\house$~ \textit{391 8th Street, New York NY 11215}
 		\end{bgbox}\vspace*{25.5pt}
 		{\Huge{Experience}}\\[-6pt]
 		\noindent\rule{\textwidth}{1pt}\\[12pt]
 		\textbf{DATADOG} \hfill \textit{New York, NY}\\
 		Site Reliability Engineer \hfill May 20 -- Jun 23
 		\begin{itemize} [noitemsep,topsep=4pt]
-			\item Planned and implemented the migrations of some of Datadog's largest and scariest services (the primary public-facing LB, the primary timeseries DB) to Kubernetes without incident
-			\item Created Friends of MRE
-			\item Identified 80/20 solutions for the delivery of some very important configuration, I did alone in 2mo to allow a whole team a year+ to design something nicer
-			\item Reached beyond usual team boundaries to collaborate on important isolated projects when it really mattered (manifest diff, PM template, PRR)
-			\item Hosted semi-frequent architecture overview sessions, for 1-10 people, to help enable new hires to understand meetings/etc more quickly
-			\item Reviewed many design documents and pull requests, feedback included hard stuff like "we really just shouldn't do this"
-			\item Acted as a consultant/liason between infra and metrics, implemented stuff like automated node rotation
-			\item Contributed heavily to build/deployment tooling to help make managing 40+ Helm charts not a headache for the metrics devs
-			\item Did all the usual ops stuff -- worked with cloud providers for instance capacity, improved resource utilization by binpacking containers, created TF modules, ran disaster tests, got way too familiar with Kafka
-			\item Did all the usual dev stuff -- created and deployed patches, optimized database sharding, participated in on call rotation, etc
+			\item Planned and executed the migrations of some of Datadog's largest + most complicated services (the primary timeseries DB, the primary public LB) to Kubernetes, resulting in zero outages
+			% \item Started MRE
+			\item Identified 80/20 solutions in delivering delicate configuration to dozens of services simultaneously -- two months of work allowed a whole team over a year of space to design a real replacement
+			\item Initiated several projects that crossed usual team/org boundaries -- harder, but we created Datadog-wide solutions where it really mattered
+			\item Hosted architecture overview sessions, for 1-10 people, to help new hires feel empowered (instead of confused) as quickly as possible
+			% \item Reviewed many design documents and pull requests, feedback included hard stuff like "we really just shouldn't do this"
+			\item Acted as a consultant between infrastructure and product developers, and pushed stranded projects (like automated node rotation) to finish
+			\item Contributed heavily to build/deployment tooling, so product developers could mostly ignore their services' 40+ Helm charts
+			%\item Did all the usual ops stuff -- worked with cloud providers for instance capacity, improved resource utilization by binpacking containers, created TF modules, ran disaster tests, got way too familiar with Kafka
+			%\item Did all the usual dev stuff -- created and deployed patches, optimized database sharding, participated in on call rotation, etc
 		\end{itemize}
 		\vspace*{12pt}
 		\textbf{ACTIONIQ} \hfill \textit{New York, NY}\\
 		Distributed Systems Engineer \hfill Jun 18 -- Apr 20
 		\begin{itemize} [noitemsep,topsep=4pt]
-			\item Designed, advocated for, and implemented our strategy for autoscaling query execution on EC2, reducing our AWS bill by more than 50\%
+			\item Designed, advocated for, and implemented the procedure for autoscaling query execution on EC2, reducing our AWS bill by more than 50\%
 			\item Drove scalability improvements for the OSS job scheduling platform Luigi, and contributed some of that back upstream
 			\item Maintained the Prometheus cluster (later, Datadog) and led internal talks and workshops on best practices around metrics \& observability
 			\item Enabled dynamic configuration and artifact discovery

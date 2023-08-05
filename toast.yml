@@ -1,0 +1,44 @@
+image: ubuntu
+command_prefix: set -euxo pipefail
+tasks:
+  # needed to install latex
+  apt:
+    command: |
+      apt-get update
+      apt-get install wget perl libfontconfig1 unzip --yes
+  # taken directly from https://tug.org/texlive/quickinstall.html
+  latex:
+    dependencies:
+    - apt
+    command: |
+      wget https://mirror.ctan.org/systems/texlive/tlnet/install-tl-unx.tar.gz
+      zcat < install-tl-unx.tar.gz | tar xf -
+      cd $(ls -d */ | head -n 1)
+      perl ./install-tl --no-interaction --scheme=small
+  # extra latex packages that don't come intalled by default
+  tlmgr:
+    dependencies:
+    - latex
+    command: |
+      /usr/local/texlive/2023/bin/x86_64-linux/tlmgr install enumitem titling blindtext marvosym tcolorbox stix environ moresize tikzfill pdfcol listingsutf8
+  # install the extra fonts needed
+  fonts:
+    dependencies:
+    - apt
+    input_paths:
+    - source_sans_pro.zip
+    - inconsolata.zip
+    command: |
+      unzip source_sans_pro.zip  -d /usr/share/fonts/source_sans_pro
+      unzip inconsolata.zip -d /usr/share/fonts/inconsolata
+  # bah, those weirdos put the year in the path, so this might break later
+  build:
+    dependencies:
+    - tlmgr
+    - fonts
+    input_paths:
+    - resume.tex
+    output_paths:
+    - resume.pdf
+    command: |
+      /usr/local/texlive/2023/bin/x86_64-linux/xelatex resume.tex

@@ -89,14 +89,15 @@
 		\textbf{DATADOG} \hfill \textit{New York, NY}\\
 		Site Reliability Engineer \hfill May 2020 -- Jun 2023
 		\begin{itemize} [noitemsep,topsep=4pt]
-			\item Planned and executed the migrations of some of Datadog's largest + most complicated services (the primary timeseries DB, the primary public LB) to Kubernetes, resulting in zero outages
+			\item Kicked off several reliability initiatives, including founding a group to lead weekly metrics-wide incident learnings, unified SLI tracking, and running personally many production-readiness reviews
 			% \item Started MRE
-			\item Identified 80/20 solutions in delivering delicate configuration to dozens of services simultaneously -- two months of work allowed a whole team over a year of space to design a real replacement
-			\item Initiated several projects that crossed usual team/org boundaries -- harder, but we solved Datadog-wide problems where it really mattered
+			\item Operated fully in both platform \& product, building many custom platform features to improve service reliability and dev workflows
+			% \item Identified 80/20 solutions in delivering delicate configuration to dozens of services simultaneously -- two months of work allowed a whole team over a year of space to design a real replacement
+			\item Completed adoption of the new Kubernetes platform in metrics, migrating some of Datadog's largest + most complicated services (the primary TSDB, the primary public LB) without downtime
+			\item Identified (and saw to completion) several cost-efficiency projects, like the improvement of pod resource limits and bin-packing
 			\item Hosted architecture overview sessions, for 1-10 people, to help new hires feel empowered (instead of confused) as quickly as possible
 			% \item Reviewed many design documents and pull requests, feedback included hard stuff like "we really just shouldn't do this"
-			\item Acted as a consultant between infrastructure and product developers, and pushed stranded projects (like automated node rotation) to finish
-			\item Contributed heavily to build/deployment tooling, so product developers could mostly ignore their services' 40+ Helm charts
+			\item Contributed heavily to IaC, CI, and automation workflows, so product devs could mostly ignore their services' 40+ Helm charts
 			%\item Did all the usual ops stuff -- worked with cloud providers for instance capacity, improved resource utilization by binpacking containers, created TF modules, ran disaster tests, got way too familiar with Kafka
 			%\item Did all the usual dev stuff -- created and deployed patches, optimized database sharding, participated in on call rotation, etc
 		\end{itemize}
